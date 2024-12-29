@@ -1,0 +1,85 @@
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #0078d7;
+  background-color: rgba(0, 120, 215, 0.1);
+  border-radius: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-icon:hover {
+  color: #0078d7;
+  transform: scale(1.2);
+}
+
+/* Ensure the navbar is always visible */
+body {
+  margin-top: 60px; /* Adjust based on navbar height */
+}

@@ -1,0 +1,294 @@
+.product-card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.learn-more-btn {
+  background-color: #0078d7;
+  color: #fff;
+}
+
+.learn-more-btn:hover {
+  background-color: #005bb5;
+}
+
+.find-retailers-btn {
+  background-color: #34a853;
+  color: #fff;
+}
+
+.find-retailers-btn:hover {
+  background-color: #2a8c42;
+}
+.scrollable-card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.scrollable-card-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scrollable-card {
+  flex: 0 0 200px;
+  border: none;
+  border-radius: none;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  padding: 15px;
+}
+
+.card-image {
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  font-size: 16px;
+  color: #333;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+/* Container for scrolling horizontally */
+.scrollable-card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1; /* Firefox-specific */
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollable-card-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollable-card-container::-webkit-scrollbar-thumb {
+  background: #0078d7;
+  border-radius: 5px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-thumb:hover {
+  background: #005bb5;
+}
+
+/* Individual product card styling */
+.scrollable-card {
+  flex: 0 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.scrollable-card:hover {
+  transform: scale(1.1);
+}
+
+/* Image styling */
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product name styling */
+.card-name {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* New badge styling */
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(to right, #0078d7, #87ceeb);
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+/* Container for scrolling horizontally */
+.scrollable-card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1; /* Firefox-specific */
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollable-card-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollable-card-container::-webkit-scrollbar-thumb {
+  background: #0078d7;
+  border-radius: 5px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-thumb:hover {
+  background: #005bb5;
+}
+
+/* Individual product card styling */
+.scrollable-card {
+  flex: 0 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease-in-out; /* Only hover animation */
+}
+
+/* Zoom effect on hover */
+.scrollable-card:hover {
+  transform: scale(1.1);
+}
+
+/* Image styling */
+.card-image {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product name styling */
+.card-name {
+  font-size: 16px;
+  color: #333;
+}
+
+/* New badge styling */
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(to right, #0078d7, #87ceeb);
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.scrollable-card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.scrollable-card-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #1a73e8, #4285f4);
+  border-radius: 10px;
+}
+
+.scrollable-card-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-card {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  min-width: 200px;
+}
+
+.card-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.new-badge {
+  background-color: #007aff;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
