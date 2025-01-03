@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Navbar.css";
 import googleLogo from "../assets/images/googlepixel.jpg"; // Replace with your logo path
 
@@ -19,7 +20,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <i className="fas fa-search navbar-icon"></i>
-        <i className="fas fa-shopping-cart navbar-icon"></i>
+        {/* Navigate to the CartPage */}
+        <Link to="/cart">
+          <i className="fas fa-shopping-cart navbar-icon"></i>
+        </Link>
         <i className="fas fa-user navbar-icon"></i>
       </div>
     </nav>

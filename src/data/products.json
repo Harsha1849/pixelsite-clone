@@ -1,5 +1,82 @@
 [
-    { "id": 1, "name": "Pixel 7a", "price": "$100" },
-    { "id": 2, "name": "Product 2", "price": "$200" }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Pixel 8 Pro",
+    "category": "Phones",
+    "price": "$899",
+    "image": "pixel8.jpg",
+    "description": "Google Pixel 8 Pro with cutting-edge technology, exceptional camera performance, and stunning display."
+  },
+  {
+    "id": 2,
+    "name": "Pixel 7 Pro",
+    "category": "Phones",
+    "price": "$799",
+    "image": "pixel7pro.jpg",
+    "description": "The Pixel 7 Pro offers incredible AI features, vibrant screen quality, and robust performance."
+  },
+  {
+    "id": 3,
+    "name": "Pixel 6a",
+    "category": "Phones",
+    "price": "$499",
+    "image": "pixel6a.jpg",
+    "description": "Affordable Pixel 6a packed with essential Google AI features and sleek design."
+  },
+  {
+    "id": 4,
+    "name": "Pixel Buds",
+    "category": "Earbuds",
+    "price": "$129",
+    "image": "pixelbuds.jpg",
+    "description": "High-quality wireless earbuds with superior sound and seamless Google integration."
+  },
+  {
+    "id": 5,
+    "name": "Pixel Fold",
+    "category": "Phones",
+    "price": "$1799",
+    "image": "pixelfold.jpg",
+    "description": "Google's first foldable phone with multitasking and premium design."
+  },
+  {
+    "id": 6,
+    "name": "Pixel Watch",
+    "category": "Watches",
+    "price": "$349",
+    "image": "pixelwatch.jpg",
+    "description": "Elegant smartwatch featuring fitness tracking, Google Assistant, and durable build."
+  },
+  {
+    "id": 7,
+    "name": "Pixel Tablet",
+    "category": "Accessories",
+    "price": "$599",
+    "image": "pixeltab.jpg",
+    "description": "Versatile Pixel Tablet with productivity-focused features and a vibrant display."
+  },
+  {
+    "id": 8,
+    "name": "Pixel Accessories",
+    "category": "Accessories",
+    "price": "$49",
+    "image": "pixelaccessories.png",
+    "description": "A wide range of Google-certified Pixel accessories for enhanced experience."
+  },
+  {
+    "id": 9,
+    "name": "Pixel Case",
+    "category": "Accessories",
+    "price": "$39",
+    "image": "pixelcase.jpg",
+    "description": "Durable and stylish cases designed specifically for Pixel phones."
+  },
+  {
+    "id": 10,
+    "name": "Pixel Charger",
+    "category": "Accessories",
+    "price": "$29",
+    "image": "pixelcharger.jpg",
+    "description": "Fast-charging adapter for Pixel devices with USB-C compatibility."
+  }
+]
