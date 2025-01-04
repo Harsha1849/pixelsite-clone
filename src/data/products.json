@@ -4,7 +4,7 @@
     "name": "Pixel 8 Pro",
     "category": "Phones",
     "price": "$899",
-    "image": "pixel8.jpg",
+    "images": ["pixel8.jpg", "pixel8_2.jpeg", "pixel8_3.jpeg"],
     "description": "Google Pixel 8 Pro with cutting-edge technology, exceptional camera performance, and stunning display."
   },
   {
@@ -12,7 +12,7 @@
     "name": "Pixel 7 Pro",
     "category": "Phones",
     "price": "$799",
-    "image": "pixel7pro.jpg",
+    "images": ["pixel7pro_1.jpg", "pixel7pro_2.jpg", "pixel7pro_3.jpg"],
     "description": "The Pixel 7 Pro offers incredible AI features, vibrant screen quality, and robust performance."
   },
   {
@@ -20,7 +20,7 @@
     "name": "Pixel 6a",
     "category": "Phones",
     "price": "$499",
-    "image": "pixel6a.jpg",
+    "images": ["pixel6a_1.jpg", "pixel6a_2.jpg"],
     "description": "Affordable Pixel 6a packed with essential Google AI features and sleek design."
   },
   {
@@ -28,7 +28,7 @@
     "name": "Pixel Buds",
     "category": "Earbuds",
     "price": "$129",
-    "image": "pixelbuds.jpg",
+    "images": ["pixelbuds_1.jpg", "pixelbuds_2.jpg"],
     "description": "High-quality wireless earbuds with superior sound and seamless Google integration."
   },
   {
@@ -36,7 +36,7 @@
     "name": "Pixel Fold",
     "category": "Phones",
     "price": "$1799",
-    "image": "pixelfold.jpg",
+    "images": ["pixelfold_1.jpg", "pixelfold_2.jpg"],
     "description": "Google's first foldable phone with multitasking and premium design."
   },
   {
@@ -44,7 +44,7 @@
     "name": "Pixel Watch",
     "category": "Watches",
     "price": "$349",
-    "image": "pixelwatch.jpg",
+    "images": ["pixelwatch_1.jpg", "pixelwatch_2.jpg"],
     "description": "Elegant smartwatch featuring fitness tracking, Google Assistant, and durable build."
   },
   {
@@ -52,7 +52,7 @@
     "name": "Pixel Tablet",
     "category": "Accessories",
     "price": "$599",
-    "image": "pixeltab.jpg",
+    "images": ["pixeltab_1.jpg", "pixeltab_2.jpg"],
     "description": "Versatile Pixel Tablet with productivity-focused features and a vibrant display."
   },
   {
@@ -60,7 +60,7 @@
     "name": "Pixel Accessories",
     "category": "Accessories",
     "price": "$49",
-    "image": "pixelaccessories.png",
+    "images": ["pixelaccessories_1.jpg", "pixelaccessories_2.jpg"],
     "description": "A wide range of Google-certified Pixel accessories for enhanced experience."
   },
   {
@@ -68,7 +68,7 @@
     "name": "Pixel Case",
     "category": "Accessories",
     "price": "$39",
-    "image": "pixelcase.jpg",
+    "images": ["pixelcase_1.jpg", "pixelcase_2.jpg"],
     "description": "Durable and stylish cases designed specifically for Pixel phones."
   },
   {
@@ -76,7 +76,7 @@
     "name": "Pixel Charger",
     "category": "Accessories",
     "price": "$29",
-    "image": "pixelcharger.jpg",
+    "images": ["pixelcharger_1.jpg", "pixelcharger_2.jpg"],
     "description": "Fast-charging adapter for Pixel devices with USB-C compatibility."
   }
 ]
