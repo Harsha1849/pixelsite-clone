@@ -3,80 +3,167 @@
     "id": 1,
     "name": "Pixel 8 Pro",
     "category": "Phones",
-    "price": "$899",
-    "images": ["pixel8.jpg", "pixel8_2.jpeg", "pixel8_3.jpeg"],
-    "description": "Google Pixel 8 Pro with cutting-edge technology, exceptional camera performance, and stunning display."
+    "price": "899",
+    "images": ["pixel8pro_1.webp", "pixel8pro_2.webp", "pixel8pro_3.webp"],
+    "description": "Google Pixel 8 Pro with cutting-edge technology, exceptional camera performance, and stunning display.",
+    "dimensions": {
+      "length": "162.6 mm (6.4 in)",
+      "width": "76.5 mm (3.0 in)",
+      "height": "8.7 mm (0.34 in)"
+    },
+    "weight": "213 g (7.51 oz)",
+    "color": "Obsidian, Snow, Bay",
+    "materials": "Recycled aluminum and glass",
+    "packaging": "100% recycled materials"
   },
   {
     "id": 2,
     "name": "Pixel 7 Pro",
     "category": "Phones",
-    "price": "$799",
-    "images": ["pixel7pro_1.jpg", "pixel7pro_2.jpg", "pixel7pro_3.jpg"],
-    "description": "The Pixel 7 Pro offers incredible AI features, vibrant screen quality, and robust performance."
+    "price": "799",
+    "images": ["pixel7pro.webp", "pixel7pro_1.webp", "pixel7pro_2.webp"],
+    "description": "The Pixel 7 Pro offers incredible AI features, vibrant screen quality, and robust performance.",
+    "dimensions": {
+      "length": "162.9 mm (6.41 in)",
+      "width": "76.6 mm (3.02 in)",
+      "height": "8.9 mm (0.35 in)"
+    },
+    "weight": "212 g (7.48 oz)",
+    "color": "Obsidian, Snow, Hazel",
+    "materials": "Aluminum and glass",
+    "packaging": "Eco-friendly recycled packaging"
   },
   {
     "id": 3,
     "name": "Pixel 6a",
     "category": "Phones",
-    "price": "$499",
-    "images": ["pixel6a_1.jpg", "pixel6a_2.jpg"],
-    "description": "Affordable Pixel 6a packed with essential Google AI features and sleek design."
+    "price": "499",
+    "images": ["pixel6a.webp", "pixel6a_3.webp", "pixel6a_2.webp"],
+    "description": "Affordable Pixel 6a packed with essential Google AI features and sleek design.",
+    "dimensions": {
+      "length": "152.2 mm (6.0 in)",
+      "width": "71.8 mm (2.83 in)",
+      "height": "8.9 mm (0.35 in)"
+    },
+    "weight": "178 g (6.28 oz)",
+    "color": "Chalk, Charcoal, Sage",
+    "materials": "Recycled aluminum and polycarbonate",
+    "packaging": "Minimal plastic usage"
   },
   {
     "id": 4,
     "name": "Pixel Buds",
     "category": "Earbuds",
-    "price": "$129",
-    "images": ["pixelbuds_1.jpg", "pixelbuds_2.jpg"],
-    "description": "High-quality wireless earbuds with superior sound and seamless Google integration."
+    "price": "129",
+    "images": ["pixelbuds_2.webp","pixelbuds_3.webp","pixelbuds_4.webp"],
+    "description": "High-quality wireless earbuds with superior sound and seamless Google integration.",
+    "dimensions": {
+      "length": "20.7 mm (0.8 in)",
+      "width": "29.3 mm (1.15 in)",
+      "height": "17.5 mm (0.69 in)"
+    },
+    "weight": "5.1 g (0.18 oz) per earbud",
+    "color": "Snow, Charcoal, Lemongrass",
+    "materials": "Recycled plastic",
+    "packaging": "Eco-friendly materials"
   },
   {
     "id": 5,
     "name": "Pixel Fold",
     "category": "Phones",
-    "price": "$1799",
-    "images": ["pixelfold_1.jpg", "pixelfold_2.jpg"],
-    "description": "Google's first foldable phone with multitasking and premium design."
+    "price": "1799",
+    "images": ["pixelfold_1.webp", "pixelfold_2.webp","pixelfold_3.webp"],
+    "description": "Google's first foldable phone with multitasking and premium design.",
+    "dimensions": {
+      "length": "139.7 mm (5.5 in)",
+      "width": "79.5 mm (3.13 in)",
+      "height": "12.1 mm (0.48 in, folded)"
+    },
+    "weight": "283 g (9.98 oz)",
+    "color": "Porcelain, Obsidian",
+    "materials": "Premium aluminum and glass",
+    "packaging": "Sustainable recycled packaging"
   },
   {
     "id": 6,
     "name": "Pixel Watch",
     "category": "Watches",
-    "price": "$349",
-    "images": ["pixelwatch_1.jpg", "pixelwatch_2.jpg"],
-    "description": "Elegant smartwatch featuring fitness tracking, Google Assistant, and durable build."
+    "price": "349",
+    "images": ["pixelwatch_3.webp", "pixelwatch_1.webp","pixelwatch_2.webp"],
+    "description": "Elegant smartwatch featuring fitness tracking, Google Assistant, and durable build.",
+    "dimensions": {
+      "diameter": "41 mm (1.6 in)",
+      "thickness": "12.3 mm (0.48 in)"
+    },
+    "weight": "36 g (1.27 oz)",
+    "color": "Champagne Gold, Matte Black, Polished Silver",
+    "materials": "Stainless steel and Gorilla Glass",
+    "packaging": "Recyclable materials"
   },
   {
     "id": 7,
     "name": "Pixel Tablet",
-    "category": "Accessories",
-    "price": "$599",
-    "images": ["pixeltab_1.jpg", "pixeltab_2.jpg"],
-    "description": "Versatile Pixel Tablet with productivity-focused features and a vibrant display."
+    "category": "Tablets",
+    "price": "599",
+    "images": ["pixeltablet_1.webp", "pixeltablet_2.webp"],
+    "description": "Versatile Pixel Tablet with productivity-focused features and a vibrant display.",
+    "dimensions": {
+      "length": "258 mm (10.16 in)",
+      "width": "170 mm (6.69 in)",
+      "height": "8.1 mm (0.32 in)"
+    },
+    "weight": "493 g (17.4 oz)",
+    "color": "Porcelain, Hazel",
+    "materials": "Recycled aluminum and glass",
+    "packaging": "Environmentally friendly"
   },
   {
     "id": 8,
-    "name": "Pixel Accessories",
+    "name": "Pixel Cable",
     "category": "Accessories",
-    "price": "$49",
-    "images": ["pixelaccessories_1.jpg", "pixelaccessories_2.jpg"],
-    "description": "A wide range of Google-certified Pixel accessories for enhanced experience."
+    "price": "49",
+    "images": ["pixelcable_1.webp", "pixelcable_2.webp"],
+    "description": "Google 30W Type-C Fast Charging Data Cable 3Ft, Compatible with Pixel Devices.",
+    "dimensions": {
+      "length": "1 m (3.3 ft)"
+    },
+    "weight": "50 g (1.76 oz)",
+    "color": "White",
+    "materials": "Durable polycarbonate",
+    "packaging": "Minimal packaging"
   },
   {
     "id": 9,
     "name": "Pixel Case",
     "category": "Accessories",
-    "price": "$39",
-    "images": ["pixelcase_1.jpg", "pixelcase_2.jpg"],
-    "description": "Durable and stylish cases designed specifically for Pixel phones."
+    "price": "39",
+    "images": ["pixelcase_1.webp", "pixelcase_2.jpeg"],
+    "description": "Durable and stylish cases designed specifically for Pixel phones.",
+    "dimensions": {
+      "length": "162 mm (6.38 in)",
+      "width": "80 mm (3.15 in)",
+      "height": "10 mm (0.39 in)"
+    },
+    "weight": "45 g (1.59 oz)",
+    "color": "Charcoal, Chalk",
+    "materials": "Recycled TPU and polycarbonate",
+    "packaging": "Sustainable materials"
   },
   {
     "id": 10,
     "name": "Pixel Charger",
     "category": "Accessories",
-    "price": "$29",
-    "images": ["pixelcharger_1.jpg", "pixelcharger_2.jpg"],
-    "description": "Fast-charging adapter for Pixel devices with USB-C compatibility."
+    "price": "29",
+    "images": ["pixelcharger_1.webp"],
+    "description": "Fast-charging adapter for Pixel devices with USB-C compatibility.",
+    "dimensions": {
+      "length": "58 mm (2.28 in)",
+      "width": "40 mm (1.57 in)",
+      "height": "28 mm (1.10 in)"
+    },
+    "weight": "55 g (1.94 oz)",
+    "color": "White",
+    "materials": "Durable polycarbonate",
+    "packaging": "Eco-friendly materials"
   }
 ]

@@ -7,14 +7,13 @@ import products from "../data/products.json";
 const ProductDetailsPage = () => {
   const { productId } = useParams();
 
-  // Hooks must be declared at the top level
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   const product = products.find((item) => item.id === parseInt(productId));
 
   if (!product) {
-    return <div>Product not found!</div>;
+    return <div className="not-found">Product not found!</div>;
   }
 
   const handleNextImage = () => {
@@ -37,8 +36,7 @@ const ProductDetailsPage = () => {
 
   return (
     <div className="product-details">
-      {/* Left Section: Images */}
-      <div className="product-images">
+      <div className="product-images" data-aos="fade-up">
         <div className="main-image">
           <img
             src={require(`../assets/images/${product.images[currentImageIndex]}`)}
@@ -66,20 +64,33 @@ const ProductDetailsPage = () => {
         </div>
       </div>
 
-      {/* Right Section: Details */}
-      <div className="product-info">
+      <div className="product-info" data-aos="fade-left">
         <h1>{product.name}</h1>
-        <p className="reviews">
-          ⭐⭐⭐⭐⭐ (4.5/5)
-        </p>
+        <p className="reviews">⭐⭐⭐⭐⭐ (4.5/5)</p>
         <p className="description">{product.description}</p>
-        <p className="price">{product.price}</p>
+        <p className="price">${product.price}</p>
         <div className="quantity">
           <button onClick={() => handleQuantityChange("decrement")}>-</button>
           <span>{quantity}</span>
           <button onClick={() => handleQuantityChange("increment")}>+</button>
         </div>
         <button className="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div className="product-specifications" data-aos="fade-up">
+        <h2>Specifications</h2>
+        {product.dimensions && (
+          <div>
+            <h3>Dimensions</h3>
+            <p>Length: {product.dimensions.length}</p>
+            <p>Width: {product.dimensions.width}</p>
+            <p>Height: {product.dimensions.height}</p>
+          </div>
+        )}
+        <p><strong>Weight:</strong> {product.weight}</p>
+        <p><strong>Color:</strong> {product.color}</p>
+        <p><strong>Materials:</strong> {product.materials}</p>
+        <p><strong>Packaging:</strong> {product.packaging}</p>
       </div>
     </div>
   );

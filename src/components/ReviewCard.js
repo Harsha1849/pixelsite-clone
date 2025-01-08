@@ -1,9 +1,9 @@
 // CustomerReview.js
 import React from "react";
 import "./ReviewCard.css";
-import reviewImage1 from "../assets/images/pixel6a.jpg";
-import reviewImage2 from "../assets/images/pixel8.jpg";
-import reviewImage3 from "../assets/images/pixel8pro1.png";
+import reviewImage1 from "../assets/images/user_icon.webp";
+import reviewImage2 from "../assets/images/user_icon.webp";
+import reviewImage3 from "../assets/images/user_icon.webp";
 
 const ReviewCard = () => {
   const reviews = [

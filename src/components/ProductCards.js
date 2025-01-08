@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProductCards.css";
-import pixel8 from "../assets/images/pixel8.jpg";
-import pixel7Pro from "../assets/images/pixel7pro.jpg";
-import pixel6a from "../assets/images/pixel6a.jpg";
-import pixelBuds from "../assets/images/pixelbuds.jpg";
-import pixelFold from "../assets/images/pixelfold.jpg";
-import pixelWatch from "../assets/images/pixelwatch.jpg";
+import pixel8 from "../assets/images/pixel8pro_1.webp";
+import pixel7Pro from "../assets/images/pixel7pro_1.webp";
+import pixel6a from "../assets/images/pixel6a_3.webp";
+import pixelBuds from "../assets/images/pixelbuds_2.webp";
+import pixelFold from "../assets/images/pixelfold_1.webp";
+import pixelWatch from "../assets/images/pixelwatch_3.webp";
 import pixelTablet from "../assets/images/pixeltab.jpg";
 import accessories from "../assets/images/pixelaccessories.png";
 import pixelCase from "../assets/images/pixelcase.jpg";
-import pixelCharger from "../assets/images/pixelcharger.jpg";
+import pixelCharger from "../assets/images/pixelcharger_1.webp";
 
 const ProductCard = () => {
   const navigate = useNavigate();
