@@ -239,5 +239,14 @@ body {
   font-size: 1rem;
   margin: 5px 0;
 }
+.product-details {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Add spacing between sections */
+}
 
-
+.product-images,
+.product-info,
+.product-specifications {
+  width: 100%; /* Take full width */
+}

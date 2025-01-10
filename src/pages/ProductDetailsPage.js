@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../components/ProductDetailsPage.css";
-
 import products from "../data/products.json";
 
 const ProductDetailsPage = () => {
@@ -36,16 +35,24 @@ const ProductDetailsPage = () => {
 
   return (
     <div className="product-details">
-      <div className="product-images" data-aos="fade-up">
+      <section className="product-images" data-aos="fade-up">
         <div className="main-image">
           <img
             src={require(`../assets/images/${product.images[currentImageIndex]}`)}
             alt={product.name}
           />
-          <button className="arrow left-arrow" onClick={handlePreviousImage}>
+          <button
+            className="arrow left-arrow"
+            onClick={handlePreviousImage}
+            aria-label="Previous Image"
+          >
             &lt;
           </button>
-          <button className="arrow right-arrow" onClick={handleNextImage}>
+          <button
+            className="arrow right-arrow"
+            onClick={handleNextImage}
+            aria-label="Next Image"
+          >
             &gt;
           </button>
         </div>
@@ -62,22 +69,32 @@ const ProductDetailsPage = () => {
             />
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="product-info" data-aos="fade-left">
+      <section className="product-info" data-aos="fade-left">
         <h1>{product.name}</h1>
         <p className="reviews">⭐⭐⭐⭐⭐ (4.5/5)</p>
         <p className="description">{product.description}</p>
-        <p className="price">${product.price}</p>
+        <p className="price">${product.price.toFixed(2)}</p>
         <div className="quantity">
-          <button onClick={() => handleQuantityChange("decrement")}>-</button>
+          <button
+            onClick={() => handleQuantityChange("decrement")}
+            aria-label="Decrease Quantity"
+          >
+            -
+          </button>
           <span>{quantity}</span>
-          <button onClick={() => handleQuantityChange("increment")}>+</button>
+          <button
+            onClick={() => handleQuantityChange("increment")}
+            aria-label="Increase Quantity"
+          >
+            +
+          </button>
         </div>
         <button className="add-to-cart">Add to Cart</button>
-      </div>
+      </section>
 
-      <div className="product-specifications" data-aos="fade-up">
+      <section className="product-specifications" data-aos="fade-up">
         <h2>Specifications</h2>
         {product.dimensions && (
           <div>
@@ -87,11 +104,19 @@ const ProductDetailsPage = () => {
             <p>Height: {product.dimensions.height}</p>
           </div>
         )}
-        <p><strong>Weight:</strong> {product.weight}</p>
-        <p><strong>Color:</strong> {product.color}</p>
-        <p><strong>Materials:</strong> {product.materials}</p>
-        <p><strong>Packaging:</strong> {product.packaging}</p>
-      </div>
+        <p>
+          <strong>Weight:</strong> {product.weight}
+        </p>
+        <p>
+          <strong>Color:</strong> {product.color}
+        </p>
+        <p>
+          <strong>Materials:</strong> {product.materials}
+        </p>
+        <p>
+          <strong>Packaging:</strong> {product.packaging}
+        </p>
+      </section>
     </div>
   );
 };

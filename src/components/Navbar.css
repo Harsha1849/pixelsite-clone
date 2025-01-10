@@ -172,3 +172,69 @@ body {
     display: block;
   }
 }
+/* Ensure navbar content stays within boundaries */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%; /* Ensure it spans the full width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Prevent navbar-right items from overflowing */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden; /* Ensure no overflow within this container */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Responsive Design */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+
+  .navbar-center.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-right {
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* Additional Adjustments */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
+}

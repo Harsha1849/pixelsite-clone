@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Pixel 8 Pro",
     "category": "Phones",
-    "price": "899",
+    "price": 899,
     "images": ["pixel8pro_1.webp", "pixel8pro_2.webp", "pixel8pro_3.webp"],
     "description": "Google Pixel 8 Pro with cutting-edge technology, exceptional camera performance, and stunning display.",
     "dimensions": {
@@ -20,7 +20,7 @@
     "id": 2,
     "name": "Pixel 7 Pro",
     "category": "Phones",
-    "price": "799",
+    "price": 799,
     "images": ["pixel7pro.webp", "pixel7pro_1.webp", "pixel7pro_2.webp"],
     "description": "The Pixel 7 Pro offers incredible AI features, vibrant screen quality, and robust performance.",
     "dimensions": {
@@ -37,7 +37,7 @@
     "id": 3,
     "name": "Pixel 6a",
     "category": "Phones",
-    "price": "499",
+    "price": 499,
     "images": ["pixel6a.webp", "pixel6a_3.webp", "pixel6a_2.webp"],
     "description": "Affordable Pixel 6a packed with essential Google AI features and sleek design.",
     "dimensions": {
@@ -54,7 +54,7 @@
     "id": 4,
     "name": "Pixel Buds",
     "category": "Earbuds",
-    "price": "129",
+    "price": 129,
     "images": ["pixelbuds_2.webp","pixelbuds_3.webp","pixelbuds_4.webp"],
     "description": "High-quality wireless earbuds with superior sound and seamless Google integration.",
     "dimensions": {
@@ -71,7 +71,7 @@
     "id": 5,
     "name": "Pixel Fold",
     "category": "Phones",
-    "price": "1799",
+    "price": 1799,
     "images": ["pixelfold_1.webp", "pixelfold_2.webp","pixelfold_3.webp"],
     "description": "Google's first foldable phone with multitasking and premium design.",
     "dimensions": {
@@ -88,7 +88,7 @@
     "id": 6,
     "name": "Pixel Watch",
     "category": "Watches",
-    "price": "349",
+    "price": 349,
     "images": ["pixelwatch_3.webp", "pixelwatch_1.webp","pixelwatch_2.webp"],
     "description": "Elegant smartwatch featuring fitness tracking, Google Assistant, and durable build.",
     "dimensions": {
@@ -104,7 +104,7 @@
     "id": 7,
     "name": "Pixel Tablet",
     "category": "Tablets",
-    "price": "599",
+    "price": 599,
     "images": ["pixeltablet_1.webp", "pixeltablet_2.webp"],
     "description": "Versatile Pixel Tablet with productivity-focused features and a vibrant display.",
     "dimensions": {
@@ -121,7 +121,7 @@
     "id": 8,
     "name": "Pixel Cable",
     "category": "Accessories",
-    "price": "49",
+    "price": 49,
     "images": ["pixelcable_1.webp", "pixelcable_2.webp"],
     "description": "Google 30W Type-C Fast Charging Data Cable 3Ft, Compatible with Pixel Devices.",
     "dimensions": {
@@ -136,7 +136,7 @@
     "id": 9,
     "name": "Pixel Case",
     "category": "Accessories",
-    "price": "39",
+    "price": 39,
     "images": ["pixelcase_1.webp", "pixelcase_2.jpeg"],
     "description": "Durable and stylish cases designed specifically for Pixel phones.",
     "dimensions": {
@@ -153,7 +153,7 @@
     "id": 10,
     "name": "Pixel Charger",
     "category": "Accessories",
-    "price": "29",
+    "price": 29,
     "images": ["pixelcharger_1.webp"],
     "description": "Fast-charging adapter for Pixel devices with USB-C compatibility.",
     "dimensions": {
