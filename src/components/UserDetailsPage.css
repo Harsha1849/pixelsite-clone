@@ -1,21 +1,78 @@
 .user-details-page {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .user-details-page h1 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .user-details-page ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .user-details-page li {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+}
+
+.user-details-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-details-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:disabled {
+  background-color: #f0f0f0;
+}
+
+.edit-btn,
+.save-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: #005bb5;
+}
