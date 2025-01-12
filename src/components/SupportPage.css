@@ -1,0 +1,60 @@
+.support-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .support-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .support-page p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .faq-section {
+    margin-top: 30px;
+  }
+  
+  .faq {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .faq h3 {
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .contact-section {
+    margin-top: 30px;
+  }
+  
+  .contact-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-section li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-section li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-section li a:hover {
+    text-decoration: underline;
+  }
+  

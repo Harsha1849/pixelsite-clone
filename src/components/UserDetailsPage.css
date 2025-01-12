@@ -1,0 +1,21 @@
+.user-details-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-details-page h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .user-details-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-details-page li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
