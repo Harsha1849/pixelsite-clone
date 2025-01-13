@@ -95,28 +95,31 @@ const ProductDetailsPage = () => {
       </section>
 
       <section className="product-specifications" data-aos="fade-up">
-        <h2>Specifications</h2>
-        {product.dimensions && (
-          <div>
-            <h3>Dimensions</h3>
-            <p>Length: {product.dimensions.length}</p>
-            <p>Width: {product.dimensions.width}</p>
-            <p>Height: {product.dimensions.height}</p>
-          </div>
-        )}
-        <p>
-          <strong>Weight:</strong> {product.weight}
-        </p>
-        <p>
-          <strong>Color:</strong> {product.color}
-        </p>
-        <p>
-          <strong>Materials:</strong> {product.materials}
-        </p>
-        <p>
-          <strong>Packaging:</strong> {product.packaging}
-        </p>
-      </section>
+  <h2>Specifications</h2>
+  <ul className="spec-list">
+    {product.dimensions && (
+      <li>
+        <strong>Dimensions:</strong> 
+        <span>
+          {`L: ${product.dimensions.length}, W: ${product.dimensions.width}, H: ${product.dimensions.height}`}
+        </span>
+      </li>
+    )}
+    <li>
+      <strong>Weight:</strong> <span>{product.weight}</span>
+    </li>
+    <li>
+      <strong>Color:</strong> <span>{product.color}</span>
+    </li>
+    <li>
+      <strong>Materials:</strong> <span>{product.materials}</span>
+    </li>
+    <li>
+      <strong>Packaging:</strong> <span>{product.packaging}</span>
+    </li>
+  </ul>
+</section>
+
     </div>
   );
 };
