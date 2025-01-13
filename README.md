@@ -14,6 +14,9 @@ A modern, responsive React application that showcases products with an engaging 
 ![Screenshot 2025-01-08 123531](https://github.com/user-attachments/assets/46c4a0a5-d3ae-4b5b-823d-97c6b2cd2031)
 ![Screenshot 2025-01-08 123553](https://github.com/user-attachments/assets/ef6b0a11-eea3-45d4-9b0a-f65d49ce4c5c)
 ![Screenshot 2025-01-08 123624](https://github.com/user-attachments/assets/c6721799-f3a6-44dd-892d-64a4df98d962)
+![Screenshot 2025-01-13 214925](https://github.com/user-attachments/assets/66170cda-330e-4c3c-ad5a-efca44fbfe22)
+![Screenshot 2025-01-13 215001](https://github.com/user-attachments/assets/9dfd439d-a3c4-4cec-87a5-a7fb55a6b559)
+
 
 ## Tech Stack
 1. Frontend: React.js
