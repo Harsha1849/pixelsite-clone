@@ -1,0 +1,67 @@
+.press-page {
+    padding: 40px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .press-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .press-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e90ff;
+    text-align: center;
+  }
+  
+  .press-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .press-articles {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .press-item {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .press-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .press-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .press-item span {
+    font-style: italic;
+    color: #999;
+  }
+  
+  .press-item a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .press-item a:hover {
+    text-decoration: underline;
+  }
+  
