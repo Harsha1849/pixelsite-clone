@@ -53,6 +53,7 @@ const App = () => {
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/cookies" element={<CookiesPage />} />
+          <Route path="/whychoose" element={<FeaturesPage />} />
         </Routes>
       </Layout>
     </Router>

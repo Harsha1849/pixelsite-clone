@@ -4,7 +4,7 @@ import "./WhyChoose.css";
 import cameraImg from "../assets/images/camera.jpg";
 import performanceImg from "../assets/images/performance.png";
 import securityImg from "../assets/images/security.png";
-import batteryImg from "../assets/images/battery.jpg"; // Add image for the new feature
+import batteryImg from "../assets/images/battery.jpg"; 
 
 const WhyChoose = () => {
   const features = [
@@ -27,10 +27,10 @@ const WhyChoose = () => {
       image: securityImg,
     },
     {
-      id: 4, // New feature
+      id: 4,
       title: "Long-lasting Battery",
       description: "Enjoy all-day battery life with fast charging and efficient power management.",
-      image: batteryImg, // Add appropriate image path
+      image: batteryImg, 
     },
   ];
 

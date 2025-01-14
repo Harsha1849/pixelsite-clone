@@ -1,0 +1,55 @@
+/* WhyChoose.css */
+.why-choose-section {
+    margin-bottom: 100px;
+    min-height: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .why-choose-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    margin-bottom: 80px;
+  }
+  
+  .feature-frame {
+    width: 280px;
+    padding: 20px;
+    background-color: #ffebcd; /* Peach color */
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-frame:hover {
+    transform: translateY(-10px); /* Slightly lift the frame on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #333;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #777;
+  }
+  
