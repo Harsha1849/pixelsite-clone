@@ -1,7 +1,7 @@
-// Footer.js
 import React from "react";
 import "./Footer.css";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,27 +10,26 @@ const Footer = () => {
         <div className="footer-column">
           <h4 className="footer-title">Company</h4>
           <ul className="footer-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#press">Press</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
+            <li><Link to="/press">Press</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
           </ul>
         </div>
         <div className="footer-column">
           <h4 className="footer-title">Product</h4>
           <ul className="footer-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#support">Support</a></li>
+            <li><Link to="/features">Features</Link></li>
+            <li><Link to="/pricing">Pricing</Link></li>
+            <li><Link to="/testimonials">Testimonials</Link></li>
           </ul>
         </div>
         <div className="footer-column">
           <h4 className="footer-title">Legal</h4>
           <ul className="footer-links">
-            <li><a href="#terms">Terms of Service</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><Link to="/terms">Terms of Service</Link></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
+            <li><Link to="/cookies">Cookie Policy</Link></li>
           </ul>
         </div>
         <div className="footer-column">

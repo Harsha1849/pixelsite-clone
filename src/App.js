@@ -13,6 +13,17 @@ import SupportPage from "./pages/SupportPage"; // Import the new SupportPage
 import CartPage from "./pages/CartPage"; // Import CartPage
 import UserDetailsPage from "./pages/UserDetailsPage"; 
 
+import AboutPage from "./pages/AboutPage";
+import CareersPage from "./pages/CareersPage";
+import PressPage from "./pages/PressPage";
+import BlogPage from "./pages/BlogPage";
+import FeaturesPage from "./pages/FeaturesPage";
+import PricingPage from "./pages/PricingPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import CookiesPage from "./pages/CookiesPage";
+
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -31,6 +42,17 @@ const App = () => {
           <Route path="/cart" element={<CartPage />} /> {/* CartPage route */}
           <Route path="/user" element={<UserDetailsPage />} /> {/* UserDetailsPage route */}
           <Route path="/:productId" element={<ProductDetailsPage />} />
+
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/press" element={<PressPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/cookies" element={<CookiesPage />} />
         </Routes>
       </Layout>
     </Router>
