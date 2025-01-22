@@ -5,9 +5,9 @@ import products from "../data/products.json";
 
 const ProductDetailsPage = () => {
   const { productId } = useParams();
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
+  const [addedToCart, setAddedToCart] = useState(false);
 
   const product = products.find((item) => item.id === parseInt(productId));
 
@@ -15,22 +15,24 @@ const ProductDetailsPage = () => {
     return <div className="not-found">Product not found!</div>;
   }
 
-  const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === product.images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const handleAddToCart = () => {
+    const payload = { productId: product.id, quantity };
 
-  const handlePreviousImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? product.images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleQuantityChange = (type) => {
-    setQuantity((prevQuantity) =>
-      type === "increment" ? prevQuantity + 1 : Math.max(1, prevQuantity - 1)
-    );
+    fetch("http://localhost:3001/api/cart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setAddedToCart(true);
+        } else {
+          throw new Error("Failed to add to cart.");
+        }
+      })
+      .catch((error) => console.error("Error adding to cart:", error));
   };
 
   return (
@@ -43,15 +45,21 @@ const ProductDetailsPage = () => {
           />
           <button
             className="arrow left-arrow"
-            onClick={handlePreviousImage}
-            aria-label="Previous Image"
+            onClick={() =>
+              setCurrentImageIndex((prev) =>
+                prev === 0 ? product.images.length - 1 : prev - 1
+              )
+            }
           >
             &lt;
           </button>
           <button
             className="arrow right-arrow"
-            onClick={handleNextImage}
-            aria-label="Next Image"
+            onClick={() =>
+              setCurrentImageIndex((prev) =>
+                prev === product.images.length - 1 ? 0 : prev + 1
+              )
+            }
           >
             &gt;
           </button>
@@ -77,49 +85,16 @@ const ProductDetailsPage = () => {
         <p className="description">{product.description}</p>
         <p className="price">${product.price.toFixed(2)}</p>
         <div className="quantity">
-          <button
-            onClick={() => handleQuantityChange("decrement")}
-            aria-label="Decrease Quantity"
-          >
+          <button onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}>
             -
           </button>
           <span>{quantity}</span>
-          <button
-            onClick={() => handleQuantityChange("increment")}
-            aria-label="Increase Quantity"
-          >
-            +
-          </button>
+          <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
         </div>
-        <button className="add-to-cart">Add to Cart</button>
+        <button className="add-to-cart" onClick={handleAddToCart}>
+          {addedToCart ? "Added to Cart" : "Add to Cart"}
+        </button>
       </section>
-
-      <section className="product-specifications" data-aos="fade-up">
-  <h2>Specifications</h2>
-  <ul className="spec-list">
-    {product.dimensions && (
-      <li>
-        <strong>Dimensions:</strong> 
-        <span>
-          {`L: ${product.dimensions.length}, W: ${product.dimensions.width}, H: ${product.dimensions.height}`}
-        </span>
-      </li>
-    )}
-    <li>
-      <strong>Weight:</strong> <span>{product.weight}</span>
-    </li>
-    <li>
-      <strong>Color:</strong> <span>{product.color}</span>
-    </li>
-    <li>
-      <strong>Materials:</strong> <span>{product.materials}</span>
-    </li>
-    <li>
-      <strong>Packaging:</strong> <span>{product.packaging}</span>
-    </li>
-  </ul>
-</section>
-
     </div>
   );
 };
