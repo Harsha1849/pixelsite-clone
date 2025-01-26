@@ -3,13 +3,19 @@ import { useCart } from "../pages/CartContext"; // Import useCart
 import products from "../data/products.json"; // Import products data for product details
 
 const CartPage = () => {
-  const { cart } = useCart(); // Access global cart state
+  const { cart, updateCart } = useCart(); // Access global cart state and update function
 
   // Calculate total price
   const totalPrice = cart.reduce((total, item) => {
     const product = products.find((prod) => prod.id === item.productId);
     return total + (product ? product.price * item.quantity : 0);
   }, 0);
+
+  // Handle removing an item
+  const handleRemove = (productId) => {
+    const updatedCart = cart.filter((item) => item.productId !== productId);
+    updateCart(updatedCart); // Update the cart state
+  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -53,9 +59,27 @@ const CartPage = () => {
                     </p>
                     <p style={{ margin: "0" }}>Quantity: {item.quantity}</p>
                   </div>
-                  <p style={{ fontWeight: "bold", margin: "0" }}>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      margin: "0 20px 0 0",
+                    }}
+                  >
                     ${item.quantity * product.price}
                   </p>
+                  <button
+                    onClick={() => handleRemove(item.productId)}
+                    style={{
+                      backgroundColor: "#f44336",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "5px",
+                      padding: "5px 10px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Remove
+                  </button>
                 </li>
               );
             })}
