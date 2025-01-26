@@ -1,74 +1,73 @@
-import React, { useState, useEffect } from "react";
-import products from "../data/products.json"; // Adjusted based on your folder structure
+import React from "react";
+import { useCart } from "../pages/CartContext"; // Import useCart
+import products from "../data/products.json"; // Import products data for product details
 
 const CartPage = () => {
-  const [cart, setCart] = useState([]);
-  const [error, setError] = useState(null);
+  const { cart } = useCart(); // Access global cart state
 
-  useEffect(() => {
-    const fetchCartData = async () => {
-      try {
-        // Fetching cart data from public folder
-        const response = await fetch("/carts.json");
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const cartData = await response.json();
-
-        // Merging cart items with product details
-        const updatedCart = cartData.map((cartItem) => {
-          const product = products.find((p) => p.id === cartItem.productId);
-          return {
-            ...cartItem,
-            name: product?.name || "Unknown Product",
-            price: product?.price || 0,
-            image: product?.images[0] || "placeholder.jpg",
-          };
-        });
-
-        setCart(updatedCart);
-      } catch (err) {
-        console.error("Error fetching cart data:", err);
-        setError(err.message);
-      }
-    };
-
-    fetchCartData();
-  }, []);
+  // Calculate total price
+  const totalPrice = cart.reduce((total, item) => {
+    const product = products.find((prod) => prod.id === item.productId);
+    return total + (product ? product.price * item.quantity : 0);
+  }, 0);
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>Shopping Cart</h1>
-      {error && <p style={{ color: "red" }}>Error: {error}</p>}
       {cart.length === 0 ? (
         <p>Your cart is empty!</p>
       ) : (
-        <ul>
-          {cart.map((item, index) => (
-            <li key={index} style={{ marginBottom: "20px" }}>
-              <img
-                src={item.image}
-                alt={item.name}
-                style={{ width: "100px", height: "100px", objectFit: "cover" }}
-              />
-              <p>Product: {item.name}</p>
-              <p>Quantity: {item.quantity}</p>
-              <p>Total Price: ${(item.price * item.quantity).toFixed(2)}</p>
-              <button onClick={() => removeFromCart(item.productId)}>
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <ul style={{ listStyleType: "none", padding: 0 }}>
+            {cart.map((item, index) => {
+              const product = products.find((prod) => prod.id === item.productId);
+              if (!product) return null;
+
+              return (
+                <li
+                  key={index}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "20px",
+                    border: "1px solid #ddd",
+                    padding: "10px",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <img
+                    src={require(`../assets/images/${product.images[0]}`)}
+                    alt={product.name}
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      objectFit: "cover",
+                      marginRight: "20px",
+                      borderRadius: "8px",
+                    }}
+                  />
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ margin: "0 0 5px" }}>{product.name}</h3>
+                    <p style={{ margin: "0 0 5px" }}>
+                      Price: ${product.price.toFixed(2)}
+                    </p>
+                    <p style={{ margin: "0" }}>Quantity: {item.quantity}</p>
+                  </div>
+                  <p style={{ fontWeight: "bold", margin: "0" }}>
+                    ${item.quantity * product.price}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+          <hr style={{ margin: "20px 0" }} />
+          <h2 style={{ textAlign: "right" }}>
+            Total: ${totalPrice.toFixed(2)}
+          </h2>
+        </div>
       )}
     </div>
   );
-
-  function removeFromCart(productId) {
-    setCart(cart.filter((item) => item.productId !== productId));
-  }
 };
 
 export default CartPage;

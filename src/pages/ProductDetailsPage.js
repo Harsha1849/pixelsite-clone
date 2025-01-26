@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../components/ProductDetailsPage.css";
 import products from "../data/products.json";
+import { useCart } from "../pages/CartContext"; // Import useCart
 
 const ProductDetailsPage = () => {
   const { productId } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [addedToCart, setAddedToCart] = useState(false);
+  const { addToCart } = useCart(); // Get addToCart from context
 
   const product = products.find((item) => item.id === parseInt(productId));
 
@@ -16,23 +18,8 @@ const ProductDetailsPage = () => {
   }
 
   const handleAddToCart = () => {
-    const payload = { productId: product.id, quantity };
-
-    fetch("http://localhost:3001/api/cart", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    })
-      .then((response) => {
-        if (response.ok) {
-          setAddedToCart(true);
-        } else {
-          throw new Error("Failed to add to cart.");
-        }
-      })
-      .catch((error) => console.error("Error adding to cart:", error));
+    addToCart(product.id, quantity); // Use the global addToCart
+    setAddedToCart(true);
   };
 
   return (
