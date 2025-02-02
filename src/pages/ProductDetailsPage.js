@@ -80,6 +80,9 @@ const ProductDetailsPage = () => {
         </div>
         <button className="add-to-cart" onClick={handleAddToCart}>
           {addedToCart ? "Added to Cart" : "Add to Cart"}
+          <div class="hoverEffect">
+          <div></div>
+          </div>
         </button>
       </section>
     </div>

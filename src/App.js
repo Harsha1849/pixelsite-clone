@@ -24,6 +24,7 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import CookiesPage from "./pages/CookiesPage";
 
+
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
