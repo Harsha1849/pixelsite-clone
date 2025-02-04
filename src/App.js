@@ -23,6 +23,7 @@ import TestimonialsPage from "./pages/TestimonialsPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import CookiesPage from "./pages/CookiesPage";
+import Form from "./pages/Form";
 
 
 const App = () => {
