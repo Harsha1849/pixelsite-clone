@@ -56,6 +56,8 @@ const App = () => {
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/cookies" element={<CookiesPage />} />
           <Route path="/whychoose" element={<FeaturesPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<Form />} />
         </Routes>
       </Layout>
     </Router>
